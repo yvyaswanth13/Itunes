@@ -24,13 +24,16 @@ Ext.define('ModrenTunes.view.main.MainViewModel', {
   extend: 'Ext.app.ViewModel',
   alias: 'viewmodel.mainviewmodel',
   requires: [
-      'ModrenTunes.model.Tune'
+      'ModrenTunes.model.Tune',
+      'ModrenTunes.model.Songs'
       ],
       stores: {
         tunes: {
             model: 'ModrenTunes.model.Tune',
             autoLoad: true,
             sorters: ['artist', 'title']
-        }
+         },
+         
+       
       }
 });

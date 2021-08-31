@@ -73,5 +73,16 @@ Ext.define("ModrenTunes.view.main.MainView", {
       bind: {
         store: '{tunes}'
     }
-  }]
+  },
+  {
+    title: "FavList",
+    xtype: 'favsongs',
+    listeners: {
+      select: 'onGridSelect'//video
+  },
+    bind: {
+      store: '{favs}'
+  }
+  
+}]
 });
